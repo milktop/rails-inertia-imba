@@ -4,7 +4,7 @@ This is a starting point for a web app built with Rails, Inertia and Imba.
 
 It gives you the stabilitiy, pleasure and ecosystem of working with Rails, the speed, flexibility and possibilities of using Imba (or another frontend framework) and Inertia to simple and brilliantly tie it all together.
 
-### Advantages
+### Advantages
 
 - Full use of Imba
 - No need for API
@@ -39,3 +39,8 @@ If you want to start a new Rails 7 app from scratch with this stack you can try 
 5) Add npm dependencies (@inertiajs/inertia, @inertiajs/progress, imba, imba-inertia-adapter) - NEXT STEP...
 6) Create an "imba" directory (or other name) and add a script to transpile that folder to app folder
 7) See the `application.imba` entrypoint and use similar
+
+### Todo
+
+- [ ] Add basic authentication (Devise?)
+- [ ] Add basic authorization (Pundit / Action Policy?)
