@@ -6,7 +6,7 @@ It gives you the stabilitiy, pleasure and ecosystem of working with Rails, the s
 
 ### Credit
 
-- @haikyuu for imba-inertia-adapter
+- https://github.com/haikyuu/imba-inertia-adapter
 
 ### Advantages
 
