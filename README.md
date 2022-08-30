@@ -23,6 +23,7 @@ It gives you the stabilitiy, pleasure and ecosystem of working with Rails, the s
 - Run `npm install` to install the JS packages
 - Run `rails db:migrate` to migrate the Rails data from migration files
 - Run `rails db:seed` to optionally add `2000` dummy products
+- Add a default user, run for example, `User.create email: "test@test.com", password: "mypass"` inside `rails console`
 - To start the app run `foreman start -f Procfile.dev` in one tab and `npm run imba` in another (this process could probably be streamlined)
 
 ### What's included?
