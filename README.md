@@ -42,5 +42,5 @@ If you want to start a new Rails 7 app from scratch with this stack you can try 
 
 ### Todo
 
-- [ ] Add basic authentication (Devise?)
+- [x] Add basic authentication (Devise?) with simple login form
 - [ ] Add basic authorization (Pundit / Action Policy?)
