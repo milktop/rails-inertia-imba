@@ -11,7 +11,7 @@ import {use_events as imba_use_events, use_dom_bind as imba_use_dom_bind, styles
 (imba_use_events(),imba_use_dom_bind(),imba_use_slots());
 
 /*body*/
-import '../forms/ProductForm';
+import ProductForm from '../forms/ProductForm';
 
 class ProductsPageComponent extends imba_Component {
 	[$__patch__$]($$ = {}){

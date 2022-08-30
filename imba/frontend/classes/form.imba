@@ -36,7 +36,7 @@ global class Form
 	get isCreate do type === "create"
 	get isUpdate do type === "update"
 
-	get method do record ? "put" : "patch"
+	get method do record ? "put" : "post"
 	get submitText do record ? "Update" : "Submit"
 	
 	def get url, options do commit "get", url, options
@@ -60,6 +60,8 @@ global class Form
 		data = {...defaultValues}
 	
 	def commit method = "post", url, options = {}, params = {}
+
+		errors = {}
 		
 		const _options = {
 			preserveState: true,
@@ -97,5 +99,6 @@ global class Form
 			Inertia[method] url, payload, _options
 	
 	def submit params = {}
+		throw new Error "Path needs to be set for form submission" unless path
 		const url = isUpdate ? "{path}/{record.id}" : path
 		commit method, url, {}, params

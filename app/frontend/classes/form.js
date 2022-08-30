@@ -75,7 +75,7 @@ class Form {
 	}
 	
 	get method(){
-		return this.record ? "put" : "patch";
+		return this.record ? "put" : "post";
 	}
 	get submitText(){
 		return this.record ? "Update" : "Submit";
@@ -122,6 +122,8 @@ class Form {
 	commit(method = "post",url,options = {},params = {}){
 		var self = this;
 		
+		
+		this.errors = {};
 		
 		const _options = {
 			preserveState: true,
@@ -174,6 +176,7 @@ class Form {
 	
 	submit(params = {}){
 		
+		if (!(this.path)) { throw new Error("Path needs to be set for form submission") };
 		const url = this.isUpdate ? (("" + this.path + "/" + (this.record.id))) : this.path;
 		return this.commit(this.method,url,{},params);
 	}

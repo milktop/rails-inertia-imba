@@ -61,3 +61,5 @@ gem "vite_rails", "~> 3.0"
 gem "pagy", "~> 5.10"
 gem "search_cop", "~> 1.2"
 gem "audited"
+
+gem "devise", "~> 4.8"

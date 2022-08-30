@@ -5,7 +5,7 @@ function decorate$__(decorators,target,key,desc){
 	return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 const $__init__$ = Symbol.for('#__init__'), $__patch__$ = Symbol.for('#__patch__'), $__hooks__$ = Symbol.for('#__hooks__'), $beforeReconcile$ = Symbol.for('#beforeReconcile'), $placeChild$ = Symbol.for('#placeChild'), $afterReconcile$ = Symbol.for('#afterReconcile'), $$up$ = Symbol.for('##up'), $afterVisit$ = Symbol.for('#afterVisit');
-var $6 = Symbol(), $9 = Symbol(), $11 = Symbol(), $17 = Symbol(), $20 = Symbol(), $24 = Symbol(), $25 = Symbol(), $26 = Symbol(), $27 = Symbol(), $29 = Symbol(), $32 = Symbol(), $34 = Symbol(), $35 = Symbol(), $36 = Symbol(), $39 = Symbol(), $43 = Symbol(), $44 = Symbol(), $45 = Symbol(), $46 = Symbol(), $48 = Symbol(), $52 = Symbol(), $53 = Symbol(), $54 = Symbol(), $60 = Symbol(), $63 = Symbol(), $67 = Symbol(), $68 = Symbol(), $69 = Symbol(), $70 = Symbol(), $72 = Symbol(), $75 = Symbol(), $77 = Symbol(), $78 = Symbol(), $79 = Symbol(), $80 = Symbol(), $83 = Symbol(), $87 = Symbol(), $88 = Symbol(), $89 = Symbol(), $90 = Symbol(), $92 = Symbol(), $96 = Symbol(), $97 = Symbol(), $98 = Symbol(), $102 = Symbol(), $105 = Symbol(), $107 = Symbol(), $108 = Symbol(), $109 = Symbol(), $111 = Symbol(), $114 = Symbol(), $116 = Symbol(), $117 = Symbol(), $119 = Symbol(), $123 = Symbol(), $124 = Symbol(), $125 = Symbol(), $126 = Symbol(), $130 = Symbol(), $133 = Symbol(), $136 = Symbol();
+var $6 = Symbol(), $9 = Symbol(), $11 = Symbol(), $17 = Symbol(), $20 = Symbol(), $24 = Symbol(), $25 = Symbol(), $26 = Symbol(), $27 = Symbol(), $29 = Symbol(), $32 = Symbol(), $34 = Symbol(), $35 = Symbol(), $36 = Symbol(), $39 = Symbol(), $43 = Symbol(), $44 = Symbol(), $45 = Symbol(), $46 = Symbol(), $48 = Symbol(), $52 = Symbol(), $53 = Symbol(), $54 = Symbol(), $60 = Symbol(), $63 = Symbol(), $67 = Symbol(), $68 = Symbol(), $69 = Symbol(), $70 = Symbol(), $72 = Symbol(), $75 = Symbol(), $77 = Symbol(), $78 = Symbol(), $79 = Symbol(), $80 = Symbol(), $83 = Symbol(), $87 = Symbol(), $88 = Symbol(), $89 = Symbol(), $90 = Symbol(), $92 = Symbol(), $96 = Symbol(), $97 = Symbol(), $98 = Symbol(), $104 = Symbol(), $107 = Symbol(), $111 = Symbol(), $112 = Symbol(), $113 = Symbol(), $114 = Symbol(), $116 = Symbol(), $119 = Symbol(), $121 = Symbol(), $122 = Symbol(), $123 = Symbol(), $126 = Symbol(), $130 = Symbol(), $131 = Symbol(), $132 = Symbol(), $133 = Symbol(), $135 = Symbol(), $139 = Symbol(), $140 = Symbol(), $141 = Symbol(), $145 = Symbol(), $148 = Symbol(), $150 = Symbol(), $151 = Symbol(), $152 = Symbol(), $154 = Symbol(), $157 = Symbol(), $159 = Symbol(), $160 = Symbol(), $162 = Symbol(), $166 = Symbol(), $167 = Symbol(), $168 = Symbol(), $169 = Symbol(), $173 = Symbol(), $176 = Symbol(), $179 = Symbol();
 import {αobservable as imba_αobservable, αautorun as imba_αautorun, use_hooks as imba_use_hooks, hooks as imba_hooks, use_dom_bind as imba_use_dom_bind, use_events as imba_use_events, styles as imba_styles, Component as imba_Component, createComponent as imba_createComponent, createElement as imba_createElement, createLiveFragment as imba_createLiveFragment, defineTag as imba_defineTag, renderContext as imba_renderContext, getSuperTagType as imba_getSuperTagType} from 'imba';
 (imba_use_hooks(),imba_use_dom_bind(),imba_use_events());
 
@@ -175,60 +175,113 @@ class NumberInputComponent extends imba_getSuperTagType('text-input','TextInputC
 	}
 }; imba_defineTag('number-input',NumberInputComponent,{});
 
+class PasswordInputComponent extends imba_getSuperTagType('text-input','TextInputComponent',imba_Component) {
+	[$__patch__$]($$ = {}){
+		var $99;
+		super[$__patch__$] && super[$__patch__$]($$);
+		($99 = $$.step) !== undefined && (this.step = $99);
+		
+	}
+	[$__init__$]($$ = null,deep = true){
+		var $100;
+		deep && super[$__init__$] && super[$__init__$](...arguments);
+		this.step = ($$ && ($100 = $$.step) !== undefined) ? ($100) : 0.01;
+		
+	}
+	render(){
+		var $105, $125, $134, $101, $102, $103, $106 = this._ns_ || '', $108, $109, $110, $115, $117, $118, $120, $124, $127, $128, $129, $136, $137, $138;
+		$101=this;
+		$101[$beforeReconcile$]();
+		($102=$103=1,$101[$104] === 1) || ($102=$103=0,$101[$104]=1);
+		((!$102||$103&2) && $101.flagSelf$('v015pc-au'));
+		$105 = null;
+		if (this.labelText()) { ($108=$109=1,$105=$101[$107]) || ($108=$109=0,$101[$107]=$105=imba_createElement('label',null,`v015pc-av ${$106}`,null));
+		$108||($105[$$up$]=$101);
+		(imba_renderContext.context=($105[$112] || ($105[$112]={_:$105})),$110=this.labelText(),imba_renderContext.context=null,($110===$105[$113]&&$108) || ($105[$111] = $105[$placeChild$]($105[$113]=$110,384,$105[$111])));
+		 };
+		($101[$114] = $101[$placeChild$]($105,0,$101[$114]));
+		($117=$118=1,$115=$101[$116]) || ($117=$118=0,$101[$116]=$115=imba_createElement('input',$101,`v015pc-aw ${$106}`,null));
+		$117 || ($115.type="password");
+		$120=$101[$119] || ($101[$119]=$115.bind$('data',[this,'data']));
+		($120=(this.hasError||undefined),$120===$101[$122]||($118|=2,$101[$122]=$120));
+		$124 = $101[$123] || ($101[$123]={if: [null],debounce: true,'emit-submit': true});
+		$124.if[0]=this.debounce;
+		$117 || $115.on$(`input`,$124,this);
+		($118&2 && $115.flag$(`v015pc-aw ${$106}`+' '+($101[$122] ? 'v015pc-ax' : '')));
+		$117 || !$115.setup || $115.setup($118);
+		$115[$afterVisit$]($118);
+		;
+		$125 = null;
+		if (this.hasError) { ($127=$128=1,$125=$101[$126]) || ($127=$128=0,$101[$126]=$125=imba_createElement('span',null,`error ${$106}`,null));
+		$127||($125[$$up$]=$101);
+		(imba_renderContext.context=($125[$131] || ($125[$131]={_:$125})),$129=this.errors.join(", "),imba_renderContext.context=null,($129===$125[$132]&&$127) || ($125[$130] = $125[$placeChild$]($125[$132]=$129,384,$125[$130])));
+		 };
+		($101[$133] = $101[$placeChild$]($125,0,$101[$133]));
+		$134 = null;
+		if (this.hint) { ($136=$137=1,$134=$101[$135]) || ($136=$137=0,$101[$135]=$134=imba_createElement('span',null,`hint ${$106}`,null));
+		$136||($134[$$up$]=$101);
+		($138=this.hint,($138===$134[$140]&&$136) || ($134[$139] = $134[$placeChild$]($134[$140]=$138,384,$134[$139])));
+		 };
+		($101[$141] = $101[$placeChild$]($134,0,$101[$141]));
+		$101[$afterReconcile$]($103);
+		return $101;
+	}
+}; imba_defineTag('password-input',PasswordInputComponent,{});
+
 class CheckboxInputComponent extends imba_getSuperTagType('text-input','TextInputComponent',imba_Component) {
 	
 	
 	render(){
-		var $118, $99, $100, $101, $103 = this._ns_ || '', $104, $106, $110, $112, $113, $115, $120, $121, $122;
-		$99=this;
-		$99[$beforeReconcile$]();
-		($100=$101=1,$99[$102] === 1) || ($100=$101=0,$99[$102]=1);
-		((!$100||$101&2) && $99.flagSelf$('v015pc-au'));
-		($104=$99[$105]) || ($99[$105]=$104=imba_createElement('label',$99,`v015pc-av ${$103}`,null));
-		(imba_renderContext.context=($99[$108] || ($99[$108]={_:$104})),$106=this.labelText(),imba_renderContext.context=null,($106===$99[$109]&&$100) || ($99[$107] = $104[$placeChild$]($99[$109]=$106,384,$99[$107])));
+		var $161, $142, $143, $144, $146 = this._ns_ || '', $147, $149, $153, $155, $156, $158, $163, $164, $165;
+		$142=this;
+		$142[$beforeReconcile$]();
+		($143=$144=1,$142[$145] === 1) || ($143=$144=0,$142[$145]=1);
+		((!$143||$144&2) && $142.flagSelf$('v015pc-ba'));
+		($147=$142[$148]) || ($142[$148]=$147=imba_createElement('label',$142,`v015pc-bb ${$146}`,null));
+		(imba_renderContext.context=($142[$151] || ($142[$151]={_:$147})),$149=this.labelText(),imba_renderContext.context=null,($149===$142[$152]&&$143) || ($142[$150] = $147[$placeChild$]($142[$152]=$149,384,$142[$150])));
 		;
-		($112=$113=1,$110=$99[$111]) || ($112=$113=0,$99[$111]=$110=imba_createElement('input',$99,`${$103}`,null));
-		$112 || ($110.type="checkbox");
-		$115=$99[$114] || ($99[$114]=$110.bind$('data',[this,'data']));
-		($115=(this.hasError||undefined),$115===$99[$117]||($113|=2,$99[$117]=$115));
-		($113&2 && $110.flag$(`${$103}`+' '+($99[$117] ? 'v015pc-aw' : '')));
-		$112 || !$110.setup || $110.setup($113);
-		$110[$afterVisit$]($113);
+		($155=$156=1,$153=$142[$154]) || ($155=$156=0,$142[$154]=$153=imba_createElement('input',$142,`${$146}`,null));
+		$155 || ($153.type="checkbox");
+		$158=$142[$157] || ($142[$157]=$153.bind$('data',[this,'data']));
+		($158=(this.hasError||undefined),$158===$142[$160]||($156|=2,$142[$160]=$158));
+		($156&2 && $153.flag$(`${$146}`+' '+($142[$160] ? 'v015pc-bc' : '')));
+		$155 || !$153.setup || $153.setup($156);
+		$153[$afterVisit$]($156);
 		;
-		$118 = null;
-		if (this.hasError) { ($120=$121=1,$118=$99[$119]) || ($120=$121=0,$99[$119]=$118=imba_createElement('span',null,`error ${$103}`,null));
-		$120||($118[$$up$]=$99);
-		(imba_renderContext.context=($118[$124] || ($118[$124]={_:$118})),$122=this.errors.join(", "),imba_renderContext.context=null,($122===$118[$125]&&$120) || ($118[$123] = $118[$placeChild$]($118[$125]=$122,384,$118[$123])));
+		$161 = null;
+		if (this.hasError) { ($163=$164=1,$161=$142[$162]) || ($163=$164=0,$142[$162]=$161=imba_createElement('span',null,`error ${$146}`,null));
+		$163||($161[$$up$]=$142);
+		(imba_renderContext.context=($161[$167] || ($161[$167]={_:$161})),$165=this.errors.join(", "),imba_renderContext.context=null,($165===$161[$168]&&$163) || ($161[$166] = $161[$placeChild$]($161[$168]=$165,384,$161[$166])));
 		 };
-		($99[$126] = $99[$placeChild$]($118,0,$99[$126]));
-		$99[$afterReconcile$]($101);
-		return $99;
+		($142[$169] = $142[$placeChild$]($161,0,$142[$169]));
+		$142[$afterReconcile$]($144);
+		return $142;
 	}
 }; imba_defineTag('checkbox-input',CheckboxInputComponent,{});
 
 class BooleanSelectComponent extends imba_Component {
 	
 	render(){
-		var $127, $128, $129, $131 = this._ns_ || '', $132, $134, $135, $137, $138, $139, $140;
-		$127=this;
-		$127[$beforeReconcile$]();
-		($128=$129=1,$127[$130] === 1) || ($128=$129=0,$127[$130]=1);
-		($134=$135=1,$132=$127[$133]) || ($134=$135=0,$127[$133]=$132=imba_createElement('select',$127,`${$131}`,null));
-		$137=$127[$136] || ($127[$136]=$132.bind$('data',[this,'data']));
-		$134 || ($138=imba_createElement('option',$132,`${$131}`,"Indifférent"));
-		$134 || ($138.value="");
+		var $170, $171, $172, $174 = this._ns_ || '', $175, $177, $178, $180, $181, $182, $183;
+		$170=this;
+		$170[$beforeReconcile$]();
+		($171=$172=1,$170[$173] === 1) || ($171=$172=0,$170[$173]=1);
+		($177=$178=1,$175=$170[$176]) || ($177=$178=0,$170[$176]=$175=imba_createElement('select',$170,`${$174}`,null));
+		$180=$170[$179] || ($170[$179]=$175.bind$('data',[this,'data']));
+		$177 || ($181=imba_createElement('option',$175,`${$174}`,"Indifférent"));
+		$177 || ($181.value="");
 		;
-		$134 || ($139=imba_createElement('option',$132,`${$131}`,"Oui"));
-		$134 || ($139.value="true");
+		$177 || ($182=imba_createElement('option',$175,`${$174}`,"Oui"));
+		$177 || ($182.value="true");
 		;
-		$134 || ($140=imba_createElement('option',$132,`${$131}`,"Non"));
-		$134 || ($140.value="false");
+		$177 || ($183=imba_createElement('option',$175,`${$174}`,"Non"));
+		$177 || ($183.value="false");
 		;
-		$134 || !$132.setup || $132.setup($135);
-		$132[$afterVisit$]($135);
+		$177 || !$175.setup || $175.setup($178);
+		$175[$afterVisit$]($178);
 		;
-		$127[$afterReconcile$]($129);
-		return $127;
+		$170[$afterReconcile$]($172);
+		return $170;
 	}
 }; imba_defineTag('boolean-select',BooleanSelectComponent,{});
 
@@ -272,6 +325,7 @@ line-height: 20px;
 number-input { display:block; }
 
 .v015pc-au:not(#_):not(#_):not(#_) {display: flex;
+flex-direction: column;
 gap: 0.5rem;
 --u_rg: 0.5rem;
 --u_cg: 0.5rem;}
@@ -282,7 +336,24 @@ font-size: 13px;
 line-height: 20px;
 --u_lh: 20px;}
 
-.v015pc-aw:not(#_):not(#_):not(#_) {border: 1px solid hsla(0.00,84.24%,60.20%,100%);}
+.v015pc-aw:not(#_):not(#_):not(#_) {width: 100%;}
+
+.v015pc-ax:not(#_):not(#_):not(#_) {border: 1px solid hsla(0.00,0.00%,0.00%,100%);}
+
+password-input { display:block; }
+
+.v015pc-ba:not(#_):not(#_):not(#_) {display: flex;
+gap: 0.5rem;
+--u_rg: 0.5rem;
+--u_cg: 0.5rem;}
+.v015pc-ba:not(#_):not(#_):not(#_):not(:last-child) {margin-bottom: 0.5rem;}
+
+.v015pc-bb:not(#_):not(#_):not(#_) {color: hsla(240.00,5.26%,26.08%,100%);
+font-size: 13px;
+line-height: 20px;
+--u_lh: 20px;}
+
+.v015pc-bc:not(#_):not(#_):not(#_) {border: 1px solid hsla(0.00,84.24%,60.20%,100%);}
 
 checkbox-input { display:block; }
 

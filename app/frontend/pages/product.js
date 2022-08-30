@@ -4,7 +4,7 @@ import {styles as imba_styles, Component as imba_Component, createComponent as i
 (imba_use_slots());
 
 /*body*/
-import '../forms/ProductForm';
+import ProductForm from '../forms/ProductForm';
 
 class ProductPageComponent extends imba_Component {
 	[$__patch__$]($$ = {}){
@@ -38,6 +38,7 @@ class ProductPageComponent extends imba_Component {
 		;
 		($22=$23=1,$20=$3[$21]) || ($22=$23=0,$3[$21]=$20=imba_createComponent(ProductForm,$12,`${$7}`,null));
 		(product===$3[$24] || ($20.record=$3[$24]=product));
+		$22 || ($20.redirect="/products");
 		$22 || !$20.setup || $20.setup($23);
 		$20[$afterVisit$]($23);
 		$22 || $12[$appendChild$]($20);

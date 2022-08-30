@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+
+  before_action :authenticate_user!
   
   inertia_share last_record: lambda { Product.last }
   

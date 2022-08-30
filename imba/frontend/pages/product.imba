@@ -1,4 +1,4 @@
-import '../forms/ProductForm'
+import ProductForm from '../forms/ProductForm'
 
 tag product-page
 
@@ -11,4 +11,4 @@ tag product-page
 		<self>
 			<main-layout>
 				<page-titles title=product.name subtitle="Last updated {formatDateTime product.updated_at}">
-				<ProductForm record=product>
+				<ProductForm record=product redirect="/products">

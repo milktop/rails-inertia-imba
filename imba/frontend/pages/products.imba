@@ -1,4 +1,4 @@
-import '../forms/ProductForm'
+import ProductForm from '../forms/ProductForm'
 
 tag products-page
 

@@ -37,6 +37,14 @@ tag number-input < text-input
 		<span.error> errors.join ", " if hasError
 		<span.hint> hint if hint
 
+tag password-input < text-input
+	prop step = 0.01
+	<self [d:vflex g:2 mb@not-last:2]>
+		<label [c:gray7 fs:sm-]> labelText! if labelText!
+		<input type="password" [w:100%] bind=data [bd:1px solid black]=hasError @input.if(debounce).debounce.emit-submit>
+		<span.error> errors.join ", " if hasError
+		<span.hint> hint if hint
+
 tag checkbox-input < text-input
 	
 	<self [d:flex g:2 mb@not-last:2]>

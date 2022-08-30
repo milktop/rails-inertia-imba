@@ -8,6 +8,16 @@ tag json-print
 	<self>
 		<pre> <code> JSON.stringify value, null, 2
 
+tag info-message
+	css hue:gray self bg:hue2 bd:hue3/70 c:hue9 px:0.6rem py:0.4rem fs:sm mb:6 o@off:0
+	<self> <slot>
+
+tag success-message
+	<self> <info-message [hue:teal]> <slot>
+
+tag alert-message
+	<self> <info-message [hue:red]> <slot>
+
 tag close-button
 	<self> <button type="button" @click.emit-close> "Fermer"
 
