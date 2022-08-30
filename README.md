@@ -4,7 +4,7 @@ This is a starting point for a web app built with Rails, Inertia and Imba.
 
 It gives you the stabilitiy, pleasure and ecosystem of working with Rails, the speed, flexibility and possibilities of using Imba (or another frontend framework) and Inertia to simple and brilliantly tie it all together.
 
-### Credit
+### Credit
 
 - @haikyuu for imba-inertia-adapter
 
