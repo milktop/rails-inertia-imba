@@ -21,6 +21,7 @@ It gives you the stabilitiy, pleasure and ecosystem of working with Rails, the s
 - `cd` into it
 - Run `bundle` to install the ruby gems
 - Run `npm install` to install the JS packages
+- Run `rails generate audited:install` to create the audits table for tracking record changes
 - Run `rails db:migrate` to migrate the Rails data from migration files
 - Run `rails db:seed` to optionally add `2000` dummy products
 - To start the app run `foreman start -f Procfile.dev` in one tab and `npm run imba` in another (this process could probably be streamlined)
