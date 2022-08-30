@@ -38,6 +38,6 @@ class NotFoundPageComponent extends imba_Component {
 	}
 }; imba_defineTag('not-found-page',NotFoundPageComponent,{});
 
-imba_styles.register('btk9ce',`
+imba_styles.register('z18mipuo',`
 not-found-page { display:block; }
 `);

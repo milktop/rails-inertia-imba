@@ -2,7 +2,7 @@ const $__init__$ = Symbol.for('#__init__'), $__patch__$ = Symbol.for('#__patch__
 var $6 = Symbol(), $10 = Symbol(), $12 = Symbol(), $13 = Symbol(), $14 = Symbol(), $18 = Symbol(), $21 = Symbol(), $25 = Symbol(), $28 = Symbol(), $33 = Symbol(), $37 = Symbol(), $40 = Symbol(), $45 = Symbol(), $49 = Symbol(), $56 = Symbol(), $59 = Symbol(), $61 = Symbol(), $65 = Symbol(), $67 = Symbol(), $68 = Symbol(), $69 = Symbol(), $72 = Symbol(), $74 = Symbol(), $75 = Symbol(), $77 = Symbol(), $81 = Symbol(), $82 = Symbol(), $83 = Symbol();
 import {use_events as imba_use_events, transitions as imba_transitions, styles as imba_styles, Component as imba_Component, createComponent as imba_createComponent, createElement as imba_createElement, renderContext as imba_renderContext, defineTag as imba_defineTag, createLiveFragment as imba_createLiveFragment, use_slots as imba_use_slots} from 'imba';
 (imba_use_events(),imba_use_slots());
-imba_transitions.addSelectors([".gvwnvr-aj"],'transition');
+imba_transitions.addSelectors([".zwel88-aj"],'transition');
 /*body*/
 import {Inertia} from '@inertiajs/inertia';
 
@@ -31,7 +31,7 @@ class JsonPrintComponent extends imba_Component {
 		$3[$afterReconcile$]($5);
 		return $3;
 	}
-}; imba_defineTag('json-print',JsonPrintComponent,{cssns: 'gvwnvr_af'});
+}; imba_defineTag('json-print',JsonPrintComponent,{cssns: 'zwel88_af'});
 
 class InfoMessageComponent extends imba_Component {
 	
@@ -46,7 +46,7 @@ class InfoMessageComponent extends imba_Component {
 		$15[$afterReconcile$]($17);
 		return $15;
 	}
-}; imba_defineTag('info-message',InfoMessageComponent,{cssid: 'gvwnvr-aj'});
+}; imba_defineTag('info-message',InfoMessageComponent,{cssid: 'zwel88-aj'});
 
 class SuccessMessageComponent extends imba_Component {
 	
@@ -55,7 +55,7 @@ class SuccessMessageComponent extends imba_Component {
 		$22=this;
 		$22[$beforeReconcile$]();
 		($23=$24=1,$22[$25] === 1) || ($23=$24=0,$22[$25]=1);
-		($29=$30=1,$27=$22[$28]) || ($29=$30=0,$22[$28]=$27=imba_createComponent('info-message',$22,`gvwnvr-an ${$26}`,null));
+		($29=$30=1,$27=$22[$28]) || ($29=$30=0,$22[$28]=$27=imba_createComponent('info-message',$22,`zwel88-an ${$26}`,null));
 		$31 = $27[$getSlot$]('__',$22);
 		$32=$22.__slots.__;
 		($22[$33] = $31[$placeChild$]($32,384,$22[$33]));
@@ -76,7 +76,7 @@ class AlertMessageComponent extends imba_Component {
 		$34=this;
 		$34[$beforeReconcile$]();
 		($35=$36=1,$34[$37] === 1) || ($35=$36=0,$34[$37]=1);
-		($41=$42=1,$39=$34[$40]) || ($41=$42=0,$34[$40]=$39=imba_createComponent('info-message',$34,`gvwnvr-aq ${$38}`,null));
+		($41=$42=1,$39=$34[$40]) || ($41=$42=0,$34[$40]=$39=imba_createComponent('info-message',$34,`zwel88-aq ${$38}`,null));
 		$43 = $39[$getSlot$]('__',$34);
 		$44=$34.__slots.__;
 		($34[$45] = $43[$placeChild$]($44,384,$34[$45]));
@@ -141,9 +141,9 @@ class PageTitlesComponent extends imba_Component {
 		$53=this;
 		$53[$beforeReconcile$]();
 		($54=$55=1,$53[$56] === 1) || ($54=$55=0,$53[$56]=1);
-		($58=$53[$59]) || ($53[$59]=$58=imba_createElement('div',$53,`gvwnvr-av ${$57}`,null));
+		($58=$53[$59]) || ($53[$59]=$58=imba_createElement('div',$53,`zwel88-av ${$57}`,null));
 		$60 = null;
-		if (this.link) { ($62=$63=1,$60=$53[$61]) || ($62=$63=0,$53[$61]=$60=imba_createComponent('inertia-link',null,`gvwnvr-aw ${$57}`,null));
+		if (this.link) { ($62=$63=1,$60=$53[$61]) || ($62=$63=0,$53[$61]=$60=imba_createComponent('inertia-link',null,`zwel88-aw ${$57}`,null));
 		$62||($60[$$up$]=$58);
 		$64 = $60[$getSlot$]('__',$60);
 		($66=this.link.url,$66===$60[$65] || ($60.href=$60[$65]=$66));
@@ -152,14 +152,14 @@ class PageTitlesComponent extends imba_Component {
 		$60[$afterVisit$]($63);
 		 };
 		($53[$69] = $58[$placeChild$]($60,0,$53[$69]));
-		$54 || ($70=imba_createElement('span',$58,`gvwnvr-ax ${$57}`,"/"));
+		$54 || ($70=imba_createElement('span',$58,`zwel88-ax ${$57}`,"/"));
 		;
-		($71=$53[$72]) || ($53[$72]=$71=imba_createElement('h1',$58,`gvwnvr-ay ${$57}`,null));
+		($71=$53[$72]) || ($53[$72]=$71=imba_createElement('h1',$58,`zwel88-ay ${$57}`,null));
 		($73=this.title,($73===$53[$75]&&$54) || ($53[$74] = $71[$placeChild$]($53[$75]=$73,384,$53[$74])));
 		;
 		;
 		$76 = null;
-		if (this.subtitle) { ($78=$79=1,$76=$53[$77]) || ($78=$79=0,$53[$77]=$76=imba_createElement('p',null,`gvwnvr-az ${$57}`,null));
+		if (this.subtitle) { ($78=$79=1,$76=$53[$77]) || ($78=$79=0,$53[$77]=$76=imba_createElement('p',null,`zwel88-az ${$57}`,null));
 		$78||($76[$$up$]=$53);
 		($80=this.subtitle,($80===$76[$82]&&$78) || ($76[$81] = $76[$placeChild$]($76[$82]=$80,384,$76[$81])));
 		 };
@@ -169,14 +169,14 @@ class PageTitlesComponent extends imba_Component {
 	}
 }; imba_defineTag('page-titles',PageTitlesComponent,{});
 
-imba_styles.register('gvwnvr',`
+imba_styles.register('zwel88',`
 :root {--e_d:0ms;--e_f:ease-in-out;--e_w:0ms}
 
 ._instant_ { transition-duration:0ms !important; }
 
 ._easing_ {--e_d:300ms;}
 
-._ease_, .gvwnvr-aj {
+._ease_, .zwel88-aj {
 transition:      all var(--e_d) var(--e_f) var(--e_w),
 	       transform var(--e_dt,var(--e_d)) var(--e_ft,var(--e_f)) var(--e_wt,var(--e_w)),
 	           color var(--e_dc,var(--e_d)) var(--e_fc,var(--e_f)) var(--e_wc,var(--e_w)),
@@ -184,7 +184,7 @@ transition:      all var(--e_d) var(--e_f) var(--e_w),
 	         opacity var(--e_do,var(--e_d)) var(--e_fo,var(--e_f)) var(--e_wo,var(--e_w));
 }
 
-pre.gvwnvr_af:not(#_) {font-family: var(--font-mono,Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+pre.zwel88_af:not(#_) {font-family: var(--font-mono,Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
 padding: 1.5rem;
 margin-bottom: 1rem;
 background: hsla(240.00,4.76%,95.88%,60%);
@@ -198,7 +198,7 @@ box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);}
 
 json-print { display:block; }
 
-.gvwnvr-aj {--hue: gray;
+.zwel88-aj {--hue: gray;
 --hue0: 0,0%,98%;
 --hue1: 240,5%,96%;
 --hue2: 240,6%,90%;
@@ -220,11 +220,11 @@ font-size: 14px;
 line-height: 22px;
 --u_lh: 22px;
 margin-bottom: 1.5rem;}
-._off_.gvwnvr-aj {opacity: 0;}
+._off_.zwel88-aj {opacity: 0;}
 
 info-message { display:block; }
 
-.gvwnvr-an:not(#_):not(#_):not(#_) {--hue: teal;
+.zwel88-an:not(#_):not(#_):not(#_) {--hue: teal;
 --hue0: 166,76%,97%;
 --hue1: 167,85%,89%;
 --hue2: 168,84%,78%;
@@ -238,7 +238,7 @@ info-message { display:block; }
 
 success-message { display:block; }
 
-.gvwnvr-aq:not(#_):not(#_):not(#_) {--hue: red;
+.zwel88-aq:not(#_):not(#_):not(#_) {--hue: red;
 --hue0: 0,86%,97%;
 --hue1: 0,93%,94%;
 --hue2: 0,96%,89%;
@@ -254,26 +254,26 @@ alert-message { display:block; }
 
 close-button { display:block; }
 
-.gvwnvr-av:not(#_):not(#_):not(#_) {display: flex;
+.zwel88-av:not(#_):not(#_):not(#_) {display: flex;
 align-items: center;}
 
-.gvwnvr-aw:not(#_):not(#_):not(#_) {font-size: 16px;
+.zwel88-aw:not(#_):not(#_):not(#_) {font-size: 16px;
 line-height: 24px;
 --u_lh: 24px;
 font-weight: 300;
 color: hsla(240.00,3.70%,15.88%,100%);
 text-decoration: none;}
-.gvwnvr-aw:not(#_):not(#_):not(#_):hover {text-decoration: underline;}
+.zwel88-aw:not(#_):not(#_):not(#_):hover {text-decoration: underline;}
 
-.gvwnvr-ax:not(#_):not(#_):not(#_) {margin-left: 0.25rem;
+.zwel88-ax:not(#_):not(#_):not(#_) {margin-left: 0.25rem;
 margin-right: 0.25rem;}
 
-.gvwnvr-ay:not(#_):not(#_):not(#_) {font-size: 18px;
+.zwel88-ay:not(#_):not(#_):not(#_) {font-size: 18px;
 line-height: 28px;
 --u_lh: 28px;
 color: hsla(0.00,0.00%,0.00%,100%);}
 
-.gvwnvr-az:not(#_):not(#_):not(#_) {color: hsla(240.00,3.70%,15.88%,100%);
+.zwel88-az:not(#_):not(#_):not(#_) {color: hsla(240.00,3.70%,15.88%,100%);
 font-size: 13px;
 line-height: 20px;
 --u_lh: 20px;}

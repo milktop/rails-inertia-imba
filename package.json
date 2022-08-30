@@ -10,7 +10,7 @@
     "@formkit/auto-animate": "^1.0.0-beta.3",
     "@inertiajs/inertia": "^0.11.0",
     "@inertiajs/progress": "^0.2.7",
-    "imba": "^2.0.0-alpha.218",
+    "imba": "^2.0.0-alpha.219",
     "imba-inertia-adapter": "^2.0.0-alpha.211",
     "query-string": "^7.1.1"
   }

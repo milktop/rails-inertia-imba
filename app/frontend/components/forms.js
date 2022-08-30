@@ -87,20 +87,20 @@ class TextInputComponent extends imba_Component {
 		$14=this;
 		$14[$beforeReconcile$]();
 		($15=$16=1,$14[$17] === 1) || ($15=$16=0,$14[$17]=1);
-		((!$15||$16&2) && $14.flagSelf$('v015pc-ai'));
+		((!$15||$16&2) && $14.flagSelf$('flww0p-ai'));
 		$18 = null;
-		if (this.labelText()) { ($21=$22=1,$18=$14[$20]) || ($21=$22=0,$14[$20]=$18=imba_createElement('label',null,`v015pc-aj ${$19}`,null));
+		if (this.labelText()) { ($21=$22=1,$18=$14[$20]) || ($21=$22=0,$14[$20]=$18=imba_createElement('label',null,`flww0p-aj ${$19}`,null));
 		$21||($18[$$up$]=$14);
 		(imba_renderContext.context=($18[$25] || ($18[$25]={_:$18})),$23=this.labelText(),imba_renderContext.context=null,($23===$18[$26]&&$21) || ($18[$24] = $18[$placeChild$]($18[$26]=$23,384,$18[$24])));
 		 };
 		($14[$27] = $14[$placeChild$]($18,0,$14[$27]));
-		($30=$31=1,$28=$14[$29]) || ($30=$31=0,$14[$29]=$28=imba_createElement('input',$14,`v015pc-ak ${$19}`,null));
+		($30=$31=1,$28=$14[$29]) || ($30=$31=0,$14[$29]=$28=imba_createElement('input',$14,`flww0p-ak ${$19}`,null));
 		$33=$14[$32] || ($14[$32]=$28.bind$('data',[this,'data']));
 		($33=(this.hasError||undefined),$33===$14[$35]||($31|=2,$14[$35]=$33));
 		$37 = $14[$36] || ($14[$36]={if: [null],debounce: true,'emit-submit': true});
 		$37.if[0]=this.debounce;
 		$30 || $28.on$(`input`,$37,this);
-		($31&2 && $28.flag$(`v015pc-ak ${$19}`+' '+($14[$35] ? 'v015pc-al' : '')));
+		($31&2 && $28.flag$(`flww0p-ak ${$19}`+' '+($14[$35] ? 'flww0p-al' : '')));
 		$30 || !$28.setup || $28.setup($31);
 		$28[$afterVisit$]($31);
 		;
@@ -134,27 +134,34 @@ class NumberInputComponent extends imba_getSuperTagType('text-input','TextInputC
 		this.step = ($$ && ($56 = $$.step) !== undefined) ? ($56) : 0.01;
 		
 	}
+	check(){
+		
+		return console.log(this.data,typeof this.data,"is NaN?",Number.isNaN(this.data));
+	}
 	render(){
-		var $61, $82, $91, $57, $58, $59, $62 = this._ns_ || '', $64, $65, $66, $71, $73, $74, $76, $81, $84, $85, $86, $93, $94, $95;
+		var self = this, $61, $82, $91, $57, $58, $59, $62 = this._ns_ || '', $64, $65, $66, $71, $73, $74, $76, $81, $84, $85, $86, $93, $94, $95;
 		$57=this;
 		$57[$beforeReconcile$]();
 		($58=$59=1,$57[$60] === 1) || ($58=$59=0,$57[$60]=1);
-		((!$58||$59&2) && $57.flagSelf$('v015pc-ao'));
+		((!$58||$59&2) && $57.flagSelf$('flww0p-ao'));
 		$61 = null;
-		if (this.labelText()) { ($64=$65=1,$61=$57[$63]) || ($64=$65=0,$57[$63]=$61=imba_createElement('label',null,`v015pc-ap ${$62}`,null));
+		if (this.labelText()) { ($64=$65=1,$61=$57[$63]) || ($64=$65=0,$57[$63]=$61=imba_createElement('label',null,`flww0p-ap ${$62}`,null));
 		$64||($61[$$up$]=$57);
 		(imba_renderContext.context=($61[$68] || ($61[$68]={_:$61})),$66=this.labelText(),imba_renderContext.context=null,($66===$61[$69]&&$64) || ($61[$67] = $61[$placeChild$]($61[$69]=$66,384,$61[$67])));
 		 };
 		($57[$70] = $57[$placeChild$]($61,0,$57[$70]));
-		($73=$74=1,$71=$57[$72]) || ($73=$74=0,$57[$72]=$71=imba_createElement('input',$57,`v015pc-aq ${$62}`,null));
+		($73=$74=1,$71=$57[$72]) || ($73=$74=0,$57[$72]=$71=imba_createElement('input',$57,`flww0p-aq ${$62}`,null));
 		$73 || ($71.type="number");
 		($76=this.step,$76===$57[$75] || ($71.step=$57[$75]=$76));
+		$73 || ($71.on$(`blur`,{$_: [function(e,$$) {
+			return self.check(e);
+		}]},this));
 		$76=$57[$77] || ($57[$77]=$71.bind$('data',[this,'data']));
 		($76=(this.hasError||undefined),$76===$57[$79]||($74|=2,$57[$79]=$76));
 		$81 = $57[$80] || ($57[$80]={if: [null],debounce: true,'emit-submit': true});
 		$81.if[0]=this.debounce;
 		$73 || $71.on$(`input`,$81,this);
-		($74&2 && $71.flag$(`v015pc-aq ${$62}`+' '+($57[$79] ? 'v015pc-ar' : '')));
+		($74&2 && $71.flag$(`flww0p-aq ${$62}`+' '+($57[$79] ? 'flww0p-ar' : '')));
 		$73 || !$71.setup || $71.setup($74);
 		$71[$afterVisit$]($74);
 		;
@@ -193,21 +200,21 @@ class PasswordInputComponent extends imba_getSuperTagType('text-input','TextInpu
 		$101=this;
 		$101[$beforeReconcile$]();
 		($102=$103=1,$101[$104] === 1) || ($102=$103=0,$101[$104]=1);
-		((!$102||$103&2) && $101.flagSelf$('v015pc-au'));
+		((!$102||$103&2) && $101.flagSelf$('flww0p-au'));
 		$105 = null;
-		if (this.labelText()) { ($108=$109=1,$105=$101[$107]) || ($108=$109=0,$101[$107]=$105=imba_createElement('label',null,`v015pc-av ${$106}`,null));
+		if (this.labelText()) { ($108=$109=1,$105=$101[$107]) || ($108=$109=0,$101[$107]=$105=imba_createElement('label',null,`flww0p-av ${$106}`,null));
 		$108||($105[$$up$]=$101);
 		(imba_renderContext.context=($105[$112] || ($105[$112]={_:$105})),$110=this.labelText(),imba_renderContext.context=null,($110===$105[$113]&&$108) || ($105[$111] = $105[$placeChild$]($105[$113]=$110,384,$105[$111])));
 		 };
 		($101[$114] = $101[$placeChild$]($105,0,$101[$114]));
-		($117=$118=1,$115=$101[$116]) || ($117=$118=0,$101[$116]=$115=imba_createElement('input',$101,`v015pc-aw ${$106}`,null));
+		($117=$118=1,$115=$101[$116]) || ($117=$118=0,$101[$116]=$115=imba_createElement('input',$101,`flww0p-aw ${$106}`,null));
 		$117 || ($115.type="password");
 		$120=$101[$119] || ($101[$119]=$115.bind$('data',[this,'data']));
 		($120=(this.hasError||undefined),$120===$101[$122]||($118|=2,$101[$122]=$120));
 		$124 = $101[$123] || ($101[$123]={if: [null],debounce: true,'emit-submit': true});
 		$124.if[0]=this.debounce;
 		$117 || $115.on$(`input`,$124,this);
-		($118&2 && $115.flag$(`v015pc-aw ${$106}`+' '+($101[$122] ? 'v015pc-ax' : '')));
+		($118&2 && $115.flag$(`flww0p-aw ${$106}`+' '+($101[$122] ? 'flww0p-ax' : '')));
 		$117 || !$115.setup || $115.setup($118);
 		$115[$afterVisit$]($118);
 		;
@@ -236,15 +243,15 @@ class CheckboxInputComponent extends imba_getSuperTagType('text-input','TextInpu
 		$142=this;
 		$142[$beforeReconcile$]();
 		($143=$144=1,$142[$145] === 1) || ($143=$144=0,$142[$145]=1);
-		((!$143||$144&2) && $142.flagSelf$('v015pc-ba'));
-		($147=$142[$148]) || ($142[$148]=$147=imba_createElement('label',$142,`v015pc-bb ${$146}`,null));
+		((!$143||$144&2) && $142.flagSelf$('flww0p-ba'));
+		($147=$142[$148]) || ($142[$148]=$147=imba_createElement('label',$142,`flww0p-bb ${$146}`,null));
 		(imba_renderContext.context=($142[$151] || ($142[$151]={_:$147})),$149=this.labelText(),imba_renderContext.context=null,($149===$142[$152]&&$143) || ($142[$150] = $147[$placeChild$]($142[$152]=$149,384,$142[$150])));
 		;
 		($155=$156=1,$153=$142[$154]) || ($155=$156=0,$142[$154]=$153=imba_createElement('input',$142,`${$146}`,null));
 		$155 || ($153.type="checkbox");
 		$158=$142[$157] || ($142[$157]=$153.bind$('data',[this,'data']));
 		($158=(this.hasError||undefined),$158===$142[$160]||($156|=2,$142[$160]=$158));
-		($156&2 && $153.flag$(`${$146}`+' '+($142[$160] ? 'v015pc-bc' : '')));
+		($156&2 && $153.flag$(`${$146}`+' '+($142[$160] ? 'flww0p-bc' : '')));
 		$155 || !$153.setup || $153.setup($156);
 		$153[$afterVisit$]($156);
 		;
@@ -285,75 +292,75 @@ class BooleanSelectComponent extends imba_Component {
 	}
 }; imba_defineTag('boolean-select',BooleanSelectComponent,{});
 
-imba_styles.register('v015pc',`
+imba_styles.register('flww0p',`
 app-form { display:block; }
 
-.v015pc-ai:not(#_):not(#_):not(#_) {display: flex;
+.flww0p-ai:not(#_):not(#_):not(#_) {display: flex;
 flex-direction: column;
 gap: 0.5rem;
 --u_rg: 0.5rem;
 --u_cg: 0.5rem;}
-.v015pc-ai:not(#_):not(#_):not(#_):not(:last-child) {margin-bottom: 0.5rem;}
+.flww0p-ai:not(#_):not(#_):not(#_):not(:last-child) {margin-bottom: 0.5rem;}
 
-.v015pc-aj:not(#_):not(#_):not(#_) {color: hsla(240.00,5.26%,26.08%,100%);
+.flww0p-aj:not(#_):not(#_):not(#_) {color: hsla(240.00,5.26%,26.08%,100%);
 font-size: 13px;
 line-height: 20px;
 --u_lh: 20px;}
 
-.v015pc-ak:not(#_):not(#_):not(#_) {width: 100%;}
+.flww0p-ak:not(#_):not(#_):not(#_) {width: 100%;}
 
-.v015pc-al:not(#_):not(#_):not(#_) {border: 1px solid hsla(0.00,0.00%,0.00%,100%);}
+.flww0p-al:not(#_):not(#_):not(#_) {border: 1px solid hsla(0.00,0.00%,0.00%,100%);}
 
 text-input { display:block; }
 
-.v015pc-ao:not(#_):not(#_):not(#_) {display: flex;
+.flww0p-ao:not(#_):not(#_):not(#_) {display: flex;
 flex-direction: column;
 gap: 0.5rem;
 --u_rg: 0.5rem;
 --u_cg: 0.5rem;}
-.v015pc-ao:not(#_):not(#_):not(#_):not(:last-child) {margin-bottom: 0.5rem;}
+.flww0p-ao:not(#_):not(#_):not(#_):not(:last-child) {margin-bottom: 0.5rem;}
 
-.v015pc-ap:not(#_):not(#_):not(#_) {color: hsla(240.00,5.26%,26.08%,100%);
+.flww0p-ap:not(#_):not(#_):not(#_) {color: hsla(240.00,5.26%,26.08%,100%);
 font-size: 13px;
 line-height: 20px;
 --u_lh: 20px;}
 
-.v015pc-aq:not(#_):not(#_):not(#_) {width: 100%;}
+.flww0p-aq:not(#_):not(#_):not(#_) {width: 100%;}
 
-.v015pc-ar:not(#_):not(#_):not(#_) {border: 1px solid hsla(0.00,0.00%,0.00%,100%);}
+.flww0p-ar:not(#_):not(#_):not(#_) {border: 1px solid hsla(0.00,0.00%,0.00%,100%);}
 
 number-input { display:block; }
 
-.v015pc-au:not(#_):not(#_):not(#_) {display: flex;
+.flww0p-au:not(#_):not(#_):not(#_) {display: flex;
 flex-direction: column;
 gap: 0.5rem;
 --u_rg: 0.5rem;
 --u_cg: 0.5rem;}
-.v015pc-au:not(#_):not(#_):not(#_):not(:last-child) {margin-bottom: 0.5rem;}
+.flww0p-au:not(#_):not(#_):not(#_):not(:last-child) {margin-bottom: 0.5rem;}
 
-.v015pc-av:not(#_):not(#_):not(#_) {color: hsla(240.00,5.26%,26.08%,100%);
+.flww0p-av:not(#_):not(#_):not(#_) {color: hsla(240.00,5.26%,26.08%,100%);
 font-size: 13px;
 line-height: 20px;
 --u_lh: 20px;}
 
-.v015pc-aw:not(#_):not(#_):not(#_) {width: 100%;}
+.flww0p-aw:not(#_):not(#_):not(#_) {width: 100%;}
 
-.v015pc-ax:not(#_):not(#_):not(#_) {border: 1px solid hsla(0.00,0.00%,0.00%,100%);}
+.flww0p-ax:not(#_):not(#_):not(#_) {border: 1px solid hsla(0.00,0.00%,0.00%,100%);}
 
 password-input { display:block; }
 
-.v015pc-ba:not(#_):not(#_):not(#_) {display: flex;
+.flww0p-ba:not(#_):not(#_):not(#_) {display: flex;
 gap: 0.5rem;
 --u_rg: 0.5rem;
 --u_cg: 0.5rem;}
-.v015pc-ba:not(#_):not(#_):not(#_):not(:last-child) {margin-bottom: 0.5rem;}
+.flww0p-ba:not(#_):not(#_):not(#_):not(:last-child) {margin-bottom: 0.5rem;}
 
-.v015pc-bb:not(#_):not(#_):not(#_) {color: hsla(240.00,5.26%,26.08%,100%);
+.flww0p-bb:not(#_):not(#_):not(#_) {color: hsla(240.00,5.26%,26.08%,100%);
 font-size: 13px;
 line-height: 20px;
 --u_lh: 20px;}
 
-.v015pc-bc:not(#_):not(#_):not(#_) {border: 1px solid hsla(0.00,84.24%,60.20%,100%);}
+.flww0p-bc:not(#_):not(#_):not(#_) {border: 1px solid hsla(0.00,84.24%,60.20%,100%);}
 
 checkbox-input { display:block; }
 

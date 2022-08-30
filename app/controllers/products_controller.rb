@@ -18,7 +18,7 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new form_params
     if @product.save
-      redirect_back fallback_location: products_path, notice: "Product created"
+      redirect_to params[:redirect] || @product, notice: "Product created"
     else
       redirect_back fallback_location: products_path, inertia: { errors: @product.errors }
     end

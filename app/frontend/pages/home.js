@@ -27,7 +27,7 @@ class HomePageComponent extends imba_Component {
 		($4=$5=1,$3[$6] === 1) || ($4=$5=0,$3[$6]=1);
 		($10=$11=1,$8=$3[$9]) || ($10=$11=0,$3[$9]=$8=imba_createComponent('main-layout',$3,`${$7}`,null));
 		$12 = $8[$getSlot$]('__',$3);
-		$10 || ($13=imba_createElement('h1',$12,`frxg69-ah ${$7}`,"Dashboard"));
+		$10 || ($13=imba_createElement('h1',$12,`z1bhe4cz-ah ${$7}`,"Dashboard"));
 		;
 		($14=$3[$15]) || ($3[$15]=$14=imba_createElement('p',$12,`${$7}`,null));
 		$10 || $14[$placeChild$]("Hello ");
@@ -44,8 +44,8 @@ class HomePageComponent extends imba_Component {
 	}
 }; imba_defineTag('home-page',HomePageComponent,{});
 
-imba_styles.register('frxg69',`
-.frxg69-ah:not(#_):not(#_):not(#_) {font-weight: bold;
+imba_styles.register('z1bhe4cz',`
+.z1bhe4cz-ah:not(#_):not(#_):not(#_) {font-weight: bold;
 font-size: 20px;
 line-height: 30px;
 --u_lh: 30px;

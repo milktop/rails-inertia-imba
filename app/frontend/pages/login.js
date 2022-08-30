@@ -71,7 +71,7 @@ class LoginPageComponent extends imba_Component {
 		($32=$33=1,$30=$3[$31]) || ($32=$33=0,$3[$31]=$30=imba_createElement('button',$17,`${$7}`,null));
 		($35=this.form.processing,$35===$3[$34] || ($30.disabled=$3[$34]=$35));
 		($35=(this.form.processing||undefined),$35===$3[$37]||($33|=2,$3[$37]=$35));
-		($33&2 && $30.flag$(`${$7}`+' '+($3[$37] ? 'c3xm2d-an' : '')));
+		($33&2 && $30.flag$(`${$7}`+' '+($3[$37] ? 'ddxkan-an' : '')));
 		$38 = null;
 		this.form.processing ? (($38="Logging in")) : (($38="Login"));
 		($3[$39] = $30[$placeChild$]($38,0,$3[$39]));
@@ -81,22 +81,22 @@ class LoginPageComponent extends imba_Component {
 		$3[$afterReconcile$]($5);
 		return $3;
 	}
-}; imba_defineTag('login-page',LoginPageComponent,{cssns: 'c3xm2d_af',cssid: 'c3xm2d-af'});
+}; imba_defineTag('login-page',LoginPageComponent,{cssns: 'ddxkan_af',cssid: 'ddxkan-af'});
 
-imba_styles.register('c3xm2d',`
-.c3xm2d-af {background: hsla(172.46,66.01%,50.39%,100%);
+imba_styles.register('ddxkan',`
+.ddxkan-af {background: hsla(172.46,66.01%,50.39%,100%);
 width: 100vw;
 height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;}
 
-main.c3xm2d_af:not(#_) {padding: 2.5rem;
+main.ddxkan_af:not(#_) {padding: 2.5rem;
 background: hsla(0.00,0.00%,100.00%,100%);
 border-radius: 4px;
 width: 30rem;}
 
-h2.c3xm2d_af:not(#_) {color: hsla(173.41,80.39%,40.00%,100%);
+h2.ddxkan_af:not(#_) {color: hsla(173.41,80.39%,40.00%,100%);
 font-weight: 600;
 text-align: center;
 margin-bottom: 2rem;
@@ -104,7 +104,7 @@ font-size: 18px;
 line-height: 28px;
 --u_lh: 28px;}
 
-button.c3xm2d_af:not(#_) {margin-top: 0.75rem;
+button.ddxkan_af:not(#_) {margin-top: 0.75rem;
 padding-left: 0.65rem;
 padding-right: 0.65rem;
 padding-top: 0.3rem;
@@ -117,7 +117,7 @@ font-size: 13px;
 line-height: 20px;
 --u_lh: 20px;}
 
-.c3xm2d-an:not(#_):not(#_):not(#_) {opacity: 0.6;}
+.ddxkan-an:not(#_):not(#_):not(#_) {opacity: 0.6;}
 
 login-page { display:block; }
 `);

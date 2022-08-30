@@ -48,7 +48,7 @@ export default class ProductForm extends imba_Component {
 		$4=this;
 		$4[$beforeReconcile$]();
 		($5=$6=1,$4[$7] === 1) || ($5=$6=0,$4[$7]=1);
-		$5 || ($9=imba_createElement('form',$4,`tq38r6-ah ${$8}`,null));
+		$5 || ($9=imba_createElement('form',$4,`z12mgsqa-ah ${$8}`,null));
 		$5 || ($9.on$(`submit`,{prevent: true,$_: [function(e,$$) {
 			return self.handleSubmit(e);
 		}]},this));
@@ -93,7 +93,7 @@ export default class ProductForm extends imba_Component {
 		$31[$afterVisit$]($34);
 		$33 || $9[$appendChild$]($31);
 		;
-		($40=$41=1,$38=$4[$39]) || ($40=$41=0,$4[$39]=$38=imba_createElement('button',$9,`tq38r6-am ${$8}`,null));
+		($40=$41=1,$38=$4[$39]) || ($40=$41=0,$4[$39]=$38=imba_createElement('button',$9,`z12mgsqa-am ${$8}`,null));
 		($43=this.form.processing,$43===$4[$42] || ($38.disabled=$4[$42]=$43));
 		($43=this.form.submitText,($43===$4[$45]&&$40) || ($4[$44] = $38[$placeChild$]($4[$45]=$43,384,$4[$44])));
 		;
@@ -101,10 +101,10 @@ export default class ProductForm extends imba_Component {
 		$4[$afterReconcile$]($6);
 		return $4;
 	}
-}; imba_defineTag('product-form-tq38r6-am',ProductForm,{});
+}; imba_defineTag('product-form-z12mgsqa-am',ProductForm,{});
 
-imba_styles.register('tq38r6',`
-.tq38r6-ah:not(#_):not(#_):not(#_) {display: flex;
+imba_styles.register('z12mgsqa',`
+.z12mgsqa-ah:not(#_):not(#_):not(#_) {display: flex;
 flex-direction: column;
 align-items: baseline;
 gap: 0.5rem;
@@ -112,11 +112,11 @@ gap: 0.5rem;
 --u_cg: 0.5rem;
 margin-bottom: 1rem;}
 
-.tq38r6-am:not(#_):not(#_):not(#_) {display: inline-flex;
+.z12mgsqa-am:not(#_):not(#_):not(#_) {display: inline-flex;
 width: auto;
 padding: 0.5rem;
 background: hsla(240.00,5.88%,90.00%,100%);
 cursor: pointer;}
 
-product-form-tq38r6-am { display:block; }
+product-form-z12mgsqa-am { display:block; }
 `);

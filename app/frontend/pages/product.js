@@ -53,6 +53,6 @@ class ProductPageComponent extends imba_Component {
 	}
 }; imba_defineTag('product-page',ProductPageComponent,{});
 
-imba_styles.register('wtvtug',`
+imba_styles.register('z1bijag5',`
 product-page { display:block; }
 `);

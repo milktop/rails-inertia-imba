@@ -31,9 +31,11 @@ tag text-input
 
 tag number-input < text-input
 	prop step = 0.01
+	def check
+		console.log data, typeof data, "is NaN?", Number.isNaN(data)
 	<self [d:vflex g:2 mb@not-last:2]>
 		<label [c:gray7 fs:sm-]> labelText! if labelText!
-		<input type="number" step=step [w:100%] bind=data [bd:1px solid black]=hasError @input.if(debounce).debounce.emit-submit>
+		<input type="number" step=step @blur=check [w:100%] bind=data [bd:1px solid black]=hasError @input.if(debounce).debounce.emit-submit>
 		<span.error> errors.join ", " if hasError
 		<span.hint> hint if hint
 

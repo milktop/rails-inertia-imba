@@ -9,7 +9,7 @@ import {Inertia} from '@inertiajs/inertia';
 
 class MainLayoutComponent extends imba_Component {
 	get $alerts(){
-		let el=imba_createElement('div',null,`jzgwvr-ai alerts ${this._ns_ || ''} ref--alerts`,null);
+		let el=imba_createElement('div',null,`l611vu-ai alerts ${this._ns_ || ''} ref--alerts`,null);
 		return (Object.defineProperty(this,'$alerts',{value:el}),el);
 	}
 	
@@ -44,7 +44,7 @@ class MainLayoutComponent extends imba_Component {
 			
 		} else {
 			
-			($11=$12=1,$5=$1[$10]) || ($11=$12=0,$1[$10]=$5=imba_createElement('section',null,`jzgwvr-ah ${$6}`,null));
+			($11=$12=1,$5=$1[$10]) || ($11=$12=0,$1[$10]=$5=imba_createElement('section',null,`l611vu-ah ${$6}`,null));
 			$11||($5[$$up$]=$1);
 			($13=$5[$14]) || ($5[$14]=($13=this.$alerts,$13[$$up$]=$5,$13));
 			$15 = null;
@@ -67,7 +67,7 @@ class MainLayoutComponent extends imba_Component {
 			($5[$28] = $13[$placeChild$]($22,0,$5[$28]));
 			$11 || $5[$appendChild$]($13);
 			;
-			$11 || ($29=imba_createElement('nav',$5,`jzgwvr-al ${$6}`,null));
+			$11 || ($29=imba_createElement('nav',$5,`l611vu-al ${$6}`,null));
 			($32=$33=1,$30=$5[$31]) || ($32=$33=0,$5[$31]=$30=imba_createComponent('inertia-link',$29,`${$6}`,"Dashboard"));
 			$34 = $30[$getSlot$]('__',$5);
 			$32 || ($30.href="/");
@@ -101,13 +101,13 @@ class MainLayoutComponent extends imba_Component {
 	}
 }; imba_defineTag('main-layout',MainLayoutComponent,{});
 
-imba_styles.register('jzgwvr',`
-.jzgwvr-ah:not(#_):not(#_):not(#_) {padding-left: 2.5rem;
+imba_styles.register('l611vu',`
+.l611vu-ah:not(#_):not(#_):not(#_) {padding-left: 2.5rem;
 padding-right: 2.5rem;
 padding-top: 1rem;
 padding-bottom: 1rem;}
 
-.jzgwvr-ai:not(#_):not(#_):not(#_) {position: fixed;
+.l611vu-ai:not(#_):not(#_):not(#_) {position: fixed;
 top: 1.5rem;
 right: 1.5rem;
 width: 24rem;
@@ -117,7 +117,7 @@ gap: 0.5rem;
 --u_rg: 0.5rem;
 --u_cg: 0.5rem;}
 
-.jzgwvr-al:not(#_):not(#_):not(#_) {margin-bottom: 1rem;
+.l611vu-al:not(#_):not(#_):not(#_) {margin-bottom: 1rem;
 display: flex;
 gap: 0.5rem;
 --u_rg: 0.5rem;

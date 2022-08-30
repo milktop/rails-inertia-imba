@@ -3,7 +3,7 @@ imba_transitions.addSelectors([".error.error",".hint.hint"],'transition');
 /*body*/
 
 
-imba_styles.register('gh6qv6',`
+imba_styles.register('mnqpkf',`
 :root {--e_d:0ms;--e_f:ease-in-out;--e_w:0ms}
 
 ._instant_ { transition-duration:0ms !important; }

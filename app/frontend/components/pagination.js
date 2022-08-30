@@ -79,7 +79,7 @@ class PaginationLinksComponent extends imba_Component {
 		$26=this;
 		$26[$beforeReconcile$]();
 		($27=$28=1,$26[$29] === 1) || ($27=$28=0,$26[$29]=1);
-		((!$27||$28&2) && $26.flagSelf$('bez2qa-ai'));
+		((!$27||$28&2) && $26.flagSelf$('mtiecq-ai'));
 		$30 = $31 = $32 = $33 = null;
 		if (this.data) {
 			
@@ -196,19 +196,19 @@ class PaginationTextComponent extends imba_Component {
 		return $66;
 		
 	}
-}; imba_defineTag('pagination-text',PaginationTextComponent,{cssns: 'bez2qa_an'});
+}; imba_defineTag('pagination-text',PaginationTextComponent,{cssns: 'mtiecq_an'});
 
-imba_styles.register('bez2qa',`
+imba_styles.register('mtiecq',`
 pagination-pages { display:block; }
 
-.bez2qa-ai:not(#_):not(#_):not(#_) {display: flex;
+.mtiecq-ai:not(#_):not(#_):not(#_) {display: flex;
 gap: 0.25rem;
 --u_rg: 0.25rem;
 --u_cg: 0.25rem;}
 
 pagination-links { display:block; }
 
-p.bez2qa_an:not(#_) {color: hsla(240.00,3.70%,15.88%,100%);
+p.mtiecq_an:not(#_) {color: hsla(240.00,3.70%,15.88%,100%);
 font-size: 14px;
 line-height: 22px;
 --u_lh: 22px;}
