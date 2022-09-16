@@ -17,7 +17,7 @@ It gives you the stabilitiy, pleasure and ecosystem of working with Rails, the s
 
 ### Steps
 
-- Clone this repo
+- Clone this repo (or use `npx degit milktop/rails-inertia-imba`)
 - `cd` into it
 - Run `bundle` to install the ruby gems
 - Run `npm install` to install the JS packages
