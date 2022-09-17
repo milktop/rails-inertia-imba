@@ -1,7 +1,5 @@
 {
-  "scripts": {
-    "imba": "imbac -w imba -o app"
-  },
+  "type": "module",
   "devDependencies": {
     "vite": "^3.0.9",
     "vite-plugin-ruby": "^3.1.2"
@@ -10,8 +8,10 @@
     "@formkit/auto-animate": "^1.0.0-beta.3",
     "@inertiajs/inertia": "^0.11.0",
     "@inertiajs/progress": "^0.2.7",
+    "diff": "^5.1.0",
     "imba": "^2.0.0-alpha.219",
     "imba-inertia-adapter": "^2.0.0-alpha.211",
-    "query-string": "^7.1.1"
+    "query-string": "^7.1.1",
+    "vite-plugin-imba": "^0.7.0"
   }
 }

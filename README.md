@@ -24,7 +24,7 @@ It gives you the stabilitiy, pleasure and ecosystem of working with Rails, the s
 - Run `rails db:migrate` to migrate the Rails data from migration files
 - Run `rails db:seed` to optionally add `2000` dummy products
 - Add a default user, run for example, `User.create email: "test@test.com", password: "mypass"` inside `rails console`
-- To start the app run `foreman start -f Procfile.dev` in one tab and `npm run imba` in another (this process could probably be streamlined)
+- To start the app run `foreman start -f Procfile.dev`
 
 ### What's included?
 
@@ -42,7 +42,6 @@ If you want to start a new Rails 7 app from scratch with this stack you can try 
 3) bundle add inertia_rails vite_rails
 4) bundle exec vite install
 5) Add npm dependencies (@inertiajs/inertia, @inertiajs/progress, imba, imba-inertia-adapter) - NEXT STEP...
-6) Create an "imba" directory (or other name) and add a script to transpile that folder to app folder
 7) See the `application.imba` entrypoint and use similar
 
 ### Todo

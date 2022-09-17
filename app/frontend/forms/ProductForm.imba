@@ -1,4 +1,4 @@
-import { priceResolvers, priceInitiliazers } from '../utils'
+import { priceResolvers, priceInitiliazers } from '../utils.imba'
 
 export default tag ProductForm
 

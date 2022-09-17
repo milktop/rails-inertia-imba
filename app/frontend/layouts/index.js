@@ -1,3 +1,0 @@
-
-/*body*/
-import './main';

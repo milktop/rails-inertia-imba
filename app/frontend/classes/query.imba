@@ -1,5 +1,5 @@
 import { Inertia } from '@inertiajs/inertia'
-import { setPageQuery, getParam, setURLParams, cleanParams } from '../utils'
+import { setPageQuery, getParam, setURLParams, cleanParams } from '../utils.imba'
 
 global class Query
 	loading = false

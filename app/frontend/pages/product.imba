@@ -1,4 +1,4 @@
-import ProductForm from '../forms/ProductForm'
+import ProductForm from '../forms/ProductForm.imba'
 
 tag product-page
 

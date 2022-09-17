@@ -3,11 +3,7 @@ import { InertiaProgress } from '@inertiajs/progress'
 import { createInertiaApp } from 'imba-inertia-adapter'
 import axios from 'axios'
 
-import '../layouts'
-import '../pages'
-import '../classes'
-import '../components'
-import '../styles'
+import.meta.glob(['../**/*.imba'], { eager: true })
 
 const csrfToken = document.querySelector('meta[name=csrf-token]').content
 axios.defaults.headers.common['X-CSRF-Token'] = csrfToken
